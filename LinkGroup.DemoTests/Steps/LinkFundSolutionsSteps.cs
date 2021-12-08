@@ -42,16 +42,10 @@ namespace LinkGroup.DemoTests.Feature
             Thread.Sleep(5000);
         }
         
-        [Then(@"I can select the investment managers for UK investors")]
-        public void ThenICanSelectTheInvestmentManagersForUKInvestors()
+      [Then(@"I can select the investment managers for '(.*)' investors")]
+        public void ThenICanSelectTheInvestmentManagersForInvestors(string value)
         {
-
-            IList<IWebElement> selectElements = driver.FindElements(By.CssSelector(".nav.flex-column .nav-item"));
-            var displayedSelectElements = selectElements.Where(se => se.Displayed);
-            //var option = driver.FindElement(By.CssSelector(".nav.flex-column .nav-item"));
-            //var selectElement = new SelectElement(option);
-            //Thread.Sleep(5000);
-            //selectElement.SelectByText("UK");
+            driver.FindElement(By.PartialLinkText(value)).Click();
         }
     }
 }
