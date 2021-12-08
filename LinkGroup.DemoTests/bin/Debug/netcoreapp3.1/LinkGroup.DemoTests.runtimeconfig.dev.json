@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\aqueel.khan\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\aqueel.khan\\.nuget\\packages"
+    ]
+  }
+}
