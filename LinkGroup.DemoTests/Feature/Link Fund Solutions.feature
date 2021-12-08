@@ -11,5 +11,3 @@ Scenario Outline: Investment managers
 			| UK                         |
 			| Irish                      |
 			| Swiss                      |
-			| Limited Distribution Funds |
-			| Investment Trusts          |
